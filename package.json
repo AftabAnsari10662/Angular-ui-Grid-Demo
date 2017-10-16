@@ -1,0 +1,14 @@
+{
+  "name": "plunk-ui-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ui-select": "^0.19.8"
+  }
+}

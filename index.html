@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+  <script src="http://ui-grid.info/release/ui-grid.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap.js"></script>
+  <script src="./node_modules/ui-select/dist/select.js"></script>
+  <link rel="stylesheet" href="./node_modules/ui-select/dist/select.css">
+  <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body ng-app="app">
+
+  <div ng-controller="MainCtrl">
+    <p><strong>Grid with native pagination controls</strong></p>
+    <div ui-grid="gridOptions" ui-grid-pagination class="grid"></div>
+    <br />
+    <br />
+
+
+    <!-- <ui-select ng-model="ctrl.country.selected" theme="selectize" style="width: 300px;" title="Choose a country" append-to-body="true">
+      <ui-select-match placeholder="Select or search a country in the list...">{{$select.selected.name}}</ui-select-match>
+      <ui-select-choices repeat="country in workflows | filter: $select.search">
+        <span ng-bind-html="country.name | highlight: $select.search"></span>
+        <small ng-bind-html="country.code | highlight: $select.search"></small>
+      </ui-select-choices>
+    </ui-select> -->
+
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
