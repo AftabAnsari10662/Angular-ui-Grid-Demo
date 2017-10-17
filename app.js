@@ -62,7 +62,11 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
     + '</ui-select-choices>'
     + '</ui-select>';
 
-  var editCellTemplate = '<div  ng-if="!row.entity.editrow">{{COL_FIELD}}</div><div ng-if="row.entity.editrow">'
+  var editCellTemplate = 
+    
+    '<div style="margin-left:4px;"  ng-if="!row.entity.editrow">'
+    + '{{COL_FIELD}}</div>'
+    + '<div ng-if="row.entity.editrow">'
     + selectBox;
 
   //<select style="height:30px;width:180px;" ng-options="workflow.name as workflow.name for workflow in row.entity.workflows" ng-model="MODEL_COL_FIELD"></select></div>'
@@ -73,13 +77,13 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
       name: 'exceptionDefinitionName',
       displayName: "Exception Definition ",
       field: "exceptionDefinitionName",
-      width: 250
+      width: 400
     }, {
       name: "workflowDefinitionName",
       displayName: "Workflow Definition",
       field: "workflowDefinitionName",
       cellTemplate: editCellTemplate,
-      width: 300
+      width: 400
     }, {
       name: 'Actions',
       field: 'edit',
